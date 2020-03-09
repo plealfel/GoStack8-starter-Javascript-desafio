@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Desafio 2 - Starter JavaScript - Go Stack 8</title>
+    </head>
+    <body>
+        <script> 
+        function pares (x,y){
+            var arrPar = [];
+            if(x < y){
+                while(x<y){
+                    var conta = x%2;
+                    if(conta == 0){
+                        console.log(x);
+                        //arrpar.Add(x);
+                    }
+                    x++
+                }
+                return "OK";
+            }else console.log("INTERVALO INVÁLIDO") 
+            return "INTERVALO INVÁLIDO"
+        }
+
+        var arrpares = pares(33,323);
+
+        </script>
+    </body>
+</html>

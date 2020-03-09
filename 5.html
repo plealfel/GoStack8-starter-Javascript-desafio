@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Desafio 3 - Starter JavaScript - Go Stack 8</title>
+</head>
+
+<body>
+    <script>
+        function fraseUsuarios(users){
+            let arrFrases = [];
+            for(var usuarios of users){
+                arrFrases.push(`O ${usuarios.nome} possui as habilidades: ${usuarios.habilidades.join()}`)
+            }
+            return arrFrases;
+        }
+
+        var usuarios = [{
+            nome: "Diego",
+            habilidades: ["Javascript","ReactJS","Redux"]
+        },{
+            nome:"Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails","Elixir"]
+        }];
+        var ret = fraseUsuarios(usuarios);
+        console.log(ret);
+
+    </script>
+</body>
+
+</html>
